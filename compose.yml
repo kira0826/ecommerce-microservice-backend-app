@@ -11,6 +11,7 @@ services:
       - 8761:8761
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_ZIPKIN_BASE_URL=http://zipkin-container:9411/
   cloud-config-container:
     image: selimhorri/cloud-config-ecommerce-boot:0.1.0
     ports:
