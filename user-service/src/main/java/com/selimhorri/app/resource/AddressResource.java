@@ -34,7 +34,7 @@ public class AddressResource {
 		log.info("*** AddressDto List, controller; fetch all addresss *");
 		return ResponseEntity.ok(new DtoCollectionResponse<>(this.addressService.findAll()));
 	}
-	
+
 	@GetMapping("/{addressId}")
 	public ResponseEntity<AddressDto> findById(
 			@PathVariable("addressId") 

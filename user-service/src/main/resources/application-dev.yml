@@ -25,10 +25,9 @@ spring:
   h2:
     console:
       enabled: true
-      path: /h2-console
-  #flyway:
-  #  baseline-on-migrate: true
-  #  enabled: true
+      settings:
+        web-allow-others: true
+
 
 logging:
   level:
